@@ -2,11 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-
   "engines": {
-  "node": "20.x"
-},
-
+    "node": "20.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -25,6 +23,6 @@
     "jsonwebtoken": "^9.0.3",
     "nodemon": "^3.1.14",
     "sqlite": "^5.1.1",
-    "sqlite3": "^6.0.1"
+    "sqlite3": "^5.1.6"
   }
 }
