@@ -20,7 +20,7 @@ const Navbar = () => {
 
         logout()
 
-        navigate("/login")
+        navigate("/")
     }
 
 
