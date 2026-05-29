@@ -1,0 +1,114 @@
+.my-proposals-bg{
+    min-height:100vh;
+    background:#f8fafc;
+}
+
+.my-proposals-container{
+    padding:30px;
+}
+
+.page-heading{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.proposal-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.proposal-card{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.proposal-card h2{
+    margin-bottom:10px;
+    color:#1e293b;
+}
+
+.proposal-card p{
+    margin-bottom:8px;
+    color:#475569;
+}
+
+.proposal-right{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:flex-end;
+}
+
+.proposal-actions{
+    display:flex;
+    gap:10px;
+}
+
+.view-btn{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 16px;
+    border-radius:6px;
+}
+
+.delete-btn{
+    border:none;
+    background:#dc2626;
+    color:white;
+    padding:10px 16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.pending,
+.review,
+.approved,
+.rejected,
+.changes{
+    padding:8px 14px;
+    border-radius:20px;
+    font-weight:600;
+    color:white;
+}
+
+.pending{
+    background:#f59e0b;
+}
+
+.review{
+    background:#3b82f6;
+}
+
+.approved{
+    background:#16a34a;
+}
+
+.rejected{
+    background:#dc2626;
+}
+
+.changes{
+    background:#7c3aed;
+}
+
+.empty-view{
+    text-align:center;
+    margin-top:100px;
+}
+
+.create-link{
+    display:inline-block;
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+}
