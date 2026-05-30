@@ -182,14 +182,14 @@ const getAllEventProposals = async (req, res) => {
         }
 
         // COORDINATOR
-        if (req.user.role === "coordinator") {
+        // if (req.user.role === "coordinator") {
 
-            query += `
-                AND coordinator_id = ?
-            `
+        //     query += `
+        //         AND coordinator_id = ?
+        //     `
 
-            params.push(req.user.id)
-        }
+        //     params.push(req.user.id)
+        // }
 
         // FILTERS
 
