@@ -513,11 +513,19 @@ const AdminDashboard = () => {
 
                     </table>
 
-                    <Link to="/admin/proposals">
-                                   Manage Proposals
-                               </Link>
+                    
 
                 </div>
+                <div className="manage-btn-container">
+
+    <Link
+        to="/admin/proposals"
+        className="manage-btn"
+    >
+        Manage Proposals
+    </Link>
+
+</div>
 
             </div>
 
