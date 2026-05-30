@@ -23,7 +23,7 @@ const ProtectedRoute = ({
     // No Login
     if (!token || !user) {
 
-        return <Navigate to="/login" />
+        return <Navigate to="/" />
     }
 
 
@@ -37,7 +37,7 @@ const ProtectedRoute = ({
         !allowedRoles.includes(user.role)
     ) {
 
-        return <Navigate to="/login" />
+        return <Navigate to="/" />
     }
 
 
