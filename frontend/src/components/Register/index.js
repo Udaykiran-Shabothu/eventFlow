@@ -32,7 +32,7 @@ const Register = () => {
 
 
 
-    // FETCH DEPARTMENTS
+    
     useEffect(() => {
 
         getDepartments()
@@ -157,7 +157,7 @@ const Register = () => {
                 "Registration successful"
             )
 
-            navigate("/login")
+            navigate("/")
 
         } catch (error) {
 
