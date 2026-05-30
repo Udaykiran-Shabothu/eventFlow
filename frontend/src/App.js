@@ -20,6 +20,8 @@ import MyProposals from "./components/MyProposals"
 
 import ProposalDetails from "./components/ProposalDetails"
 
+import AdminManageProposals from "./components/AdminManagerProposals"
+
 import "./App.css"
 
 const App = () => {
@@ -133,6 +135,17 @@ const App = () => {
             ]}
         >
             <ProposalDetails />
+        </ProtectedRoute>
+    }
+/>
+
+<Route
+    path="/admin/proposals"
+    element={
+        <ProtectedRoute
+            allowedRoles={["admin"]}
+        >
+            <AdminManageProposals />
         </ProtectedRoute>
     }
 />

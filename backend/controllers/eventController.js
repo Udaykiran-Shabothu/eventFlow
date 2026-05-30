@@ -625,6 +625,17 @@ const updateProposal = async (req, res) => {
             }
         }
 
+        if (
+    coordinator_id &&
+    req.user.role !== "admin"
+) {
+
+    return res.status(403).json({
+        error:
+        "Only admin can assign coordinator"
+    })
+}
+
         // Update proposal
         await db.run(
             `

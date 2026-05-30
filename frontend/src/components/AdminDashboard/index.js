@@ -511,6 +511,10 @@ const AdminDashboard = () => {
 
                     </table>
 
+                    <Link to="/admin/proposals">
+                                   Manage Proposals
+                               </Link>
+
                 </div>
 
             </div>

@@ -277,11 +277,38 @@ if (!isPasswordMatched) {
 }
 
 
+const getCoordinators = async (req, res) => {
+
+    try {
+
+        const db = getDB()
+
+        const coordinators = await db.all(`
+            SELECT
+                id,
+                name,
+                email
+            FROM users
+            WHERE role='coordinator'
+        `)
+
+        res.json(coordinators)
+
+    } catch (error) {
+
+        res.status(500).json({
+            error: error.message
+        })
+    }
+}
+
+
 
 
 
 
 module.exports = {
     registerUser,
-    loginUser
+    loginUser,
+    getCoordinators
 }
