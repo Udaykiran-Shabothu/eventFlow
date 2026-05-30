@@ -319,7 +319,7 @@ const Register = () => {
 
                     Already have account?
 
-                    <Link to="/login">
+                    <Link to="/">
                         Login
                     </Link>
 
