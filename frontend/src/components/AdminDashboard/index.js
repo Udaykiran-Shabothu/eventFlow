@@ -6,6 +6,8 @@ import { toast } from "react-toastify"
 
 import BASE_URL from "../../services/api"
 
+import { Link } from "react-router-dom"
+
 import "./index.css"
 
 const AdminDashboard = () => {

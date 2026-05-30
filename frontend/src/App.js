@@ -20,7 +20,7 @@ import MyProposals from "./components/MyProposals"
 
 import ProposalDetails from "./components/ProposalDetails"
 
-import AdminManageProposals from "./components/AdminManagerProposals"
+import AdminManageProposals from "./components/AdminManageProposals"
 
 import "./App.css"
 
